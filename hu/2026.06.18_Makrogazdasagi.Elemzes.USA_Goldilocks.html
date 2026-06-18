@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USA makrogazdasági elemzés — 2026. június: Goldilocks felé?</title>
+<link rel="alternate" hreflang="hu" href="./2026.06.18_Makrogazdasagi.Elemzes.USA_Goldilocks.html">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a0a0a;
+    --paper: #f4f0e8;
+    --accent: #c8392b;
+    --accent2: #1a3a5c;
+    --muted: #6b6560;
+    --rule: #d4cfc7;
+    --gold: #b8860b;
+    --green: #2e7d32;
+    --amber: #e65100;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  .home-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 2rem;
+  }
+
+  .home-nav > a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent2);
+    text-decoration: none;
+  }
+
+  .home-nav > a:hover { color: var(--accent); }
+
+  .lang-bar { display: flex; align-items: center; gap: 0.35rem; }
+  .lang-bar a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .lang-bar a:hover { color: var(--accent2); }
+  .lang-bar a.active { color: var(--accent2); text-decoration: underline; text-underline-offset: 3px; }
+  .lang-bar .sep { color: var(--rule); font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; }
+
+  header { border-bottom: 3px double var(--ink); padding: 2rem 0 0; text-align: center; }
+
+  .header-eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    max-width: 820px;
+    margin: 0 auto 1.5rem;
+    padding: 0 2rem;
+    letter-spacing: -0.02em;
+  }
+
+  h1 em { font-style: italic; color: var(--accent); }
+
+  .subtitle {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--muted);
+    max-width: 640px;
+    margin: 0 auto 1rem;
+    padding: 0 2rem;
+  }
+
+  .header-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    border-top: 1px solid var(--rule);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .container { max-width: 720px; margin: 0 auto; padding: 0 2rem; }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin: 3rem 0 1.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 2.5rem 0 1rem;
+    color: var(--accent2);
+  }
+
+  p { margin-bottom: 1.2rem; font-size: 0.95rem; }
+  strong { font-weight: 500; }
+  a { color: var(--accent2); }
+  ul, ol { margin: 0.5rem 0 1.2rem 1.5rem; font-size: 0.95rem; line-height: 1.9; }
+
+  .lead { font-size: 1.1rem; font-weight: 400; line-height: 1.8; margin: 2.5rem 0; }
+
+  .pullquote {
+    margin: 2.5rem 0;
+    padding: 2rem 2rem 2rem 3rem;
+    border-left: 4px solid var(--accent);
+    background: white;
+    position: relative;
+  }
+  .pullquote::before {
+    content: '\201E';
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: var(--accent);
+    opacity: 0.2;
+    position: absolute;
+    top: -1rem; left: 0.5rem;
+    line-height: 1;
+  }
+  .pullquote p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  th {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: var(--ink);
+    color: white;
+    padding: 0.6rem 0.9rem;
+    text-align: left;
+  }
+  td { padding: 0.75rem 0.9rem; border-bottom: 1px solid var(--rule); vertical-align: top; line-height: 1.5; }
+  tr:nth-child(even) td { background: white; }
+
+  .badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0.15rem 0.5rem;
+    border-radius: 2px;
+    display: inline-block;
+  }
+  .badge-bull  { background: #d5f0e0; color: var(--green); }
+  .badge-bear  { background: #fde8e8; color: var(--accent); }
+  .badge-warn  { background: #fef3cd; color: var(--amber); }
+  .badge-blue  { background: #dce8f5; color: var(--accent2); }
+
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: var(--ink);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    margin: 1.5rem 0 0.75rem;
+    display: inline-block;
+  }
+
+  .article-img { margin: 1.5rem 0; border: 1px solid var(--rule); background: white; }
+  .article-img img { width: 100%; display: block; }
+  .article-img figcaption {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    padding: 0.5rem 0.75rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .op-box {
+    border: 2px solid var(--ink);
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    background: white;
+    position: relative;
+  }
+  .op-box .op-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    position: absolute;
+    top: -0.55rem;
+    left: 1.2rem;
+    background: white;
+    padding: 0 0.4rem;
+  }
+  .op-box p { margin: 0; font-size: 0.92rem; }
+  .op-box p + p { margin-top: 0.75rem; }
+  .op-box ul { margin: 0.5rem 0 0 1.2rem; font-size: 0.92rem; }
+
+  .scenario-box {
+    border: 1px solid var(--rule);
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    background: white;
+    position: relative;
+  }
+  .scenario-box .scenario-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    position: absolute;
+    top: -0.55rem;
+    left: 1.2rem;
+    background: white;
+    padding: 0 0.4rem;
+  }
+  .scenario-box.bull .scenario-label { color: var(--green); }
+  .scenario-box.alt .scenario-label { color: var(--amber); }
+  .scenario-box p { margin: 0 0 0.75rem; font-size: 0.92rem; }
+  .scenario-box p:last-child { margin-bottom: 0; }
+  .scenario-box ul { margin: 0.25rem 0 0.75rem 1.2rem; font-size: 0.92rem; }
+
+  .disclaimer {
+    margin: 3rem 0 1rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid var(--rule);
+    font-size: 0.78rem;
+    font-style: italic;
+    color: var(--muted);
+    line-height: 1.6;
+    background: white;
+  }
+
+  footer {
+    border-top: 3px double var(--ink);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+    .pullquote { padding: 1.5rem 1.5rem 1.5rem 2rem; }
+    .header-meta { flex-direction: column; gap: 0.4rem; }
+    .lang-bar { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="home-nav">
+  <a href="index.html">← Kezdőlap</a>
+  <div class="lang-bar">
+    <a href="../es/2026.06.18_Analisis.Macro.EEUU_Goldilocks.html">ES</a>
+    <span class="sep">·</span>
+    <a href="../en/2026.06.18_Macro.Analysis.USA_Goldilocks.html">EN</a>
+    <span class="sep">·</span>
+    <a href="../de/2026.06.18_Makrooekonomische.Analyse.USA_Goldilocks.html">DE</a>
+    <span class="sep">·</span>
+    <a href="./2026.06.18_Makrogazdasagi.Elemzes.USA_Goldilocks.html" class="active">HU</a>
+  </div>
+</nav>
+
+<header>
+  <div class="header-eyebrow">Makrogazdasági elemzés &middot; Egyesült Államok &middot; 2026. június</div>
+  <h1>A Négy Kvadráns keretrendszer:<br><em>Goldilocks felé?</em></h1>
+  <p class="subtitle">Az USA Quad2-ben van (Inflationary Boom). A Brent 35%-os csökkenésével a csúcsokról a Goldilocks-átmenet feltételei kialakulóban vannak. A kulcsdátum: 2026. július 14.</p>
+  <div class="header-meta">
+    <span>P.V.</span>
+    <span>2026. június</span>
+    <span>~25 perc olvasás</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <p class="lead">Ez az elemzés az Egyesült Államok gazdaságának jelenlegi helyzetét értékeli a Négy Makrogazdasági Kvadráns keretrendszerén belül, azzal a céllal, hogy azonosítsa az uralkodó piaci rezsimet és előrejelezze annak valószínű alakulását a következő 2–3 hónapban.</p>
+
+  <div class="op-box">
+    <span class="op-label">Központi tézis</span>
+    <p>Az USA jelenleg <strong>Quad2-ben (Inflationary Boom)</strong> van: pozitív gazdasági növekedés emelkedő inflációval. Az inflációs felívelés elsődleges oka azonban egy külső energetikai ellátási sokk volt, amelyet a 2026. február 28-án kezdődő USA/Izrael vs. Irán konfliktus váltott ki. Mivel a Brent ára ~$120-os csúcsokról $78-ra esett (−35%), a <strong>Quad1-re (Disinflationary Boom / „Goldilocks") való átmenet feltételei</strong> kialakulóban vannak. A megerősítés kulcsdátuma <strong>2026. július 14.</strong>, amikor a júniusi CPI megjelenik.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>1. A Négy Kvadráns keretrendszer</h2>
+
+  <p>A Négy Kvadráns modell a makrogazdasági környezetet két tengely mentén osztályozza: a gazdasági aktivitás iránya (növekedés vagy zsugorodás) és az árak iránya (infláció vagy dezinfláció). Minden kvadráns különálló piaci rezsimet definiál, meghatározott következményekkel a monetáris politikára és az eszközallokációra nézve.</p>
+
+  <figure class="article-img">
+    <img src="../img/macro-eeuu-quadrants.jpg" alt="A Négy Makrogazdasági Kvadráns keretrendszere">
+    <figcaption>1. ábra. A Négy Makrogazdasági Kvadráns keretrendszere. Forrás: saját szerkesztés.</figcaption>
+  </figure>
+
+  <div class="section-label">1. táblázat · A négy kvadráns és jellemzőik</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Kvadráns</th><th>Rezsim</th><th>Aktivitás</th><th>Árak</th><th>Monetáris politika</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Quad1</strong></td><td>Disinflationary Boom <em>(Goldilocks)</em></td><td>+</td><td>−</td><td>Semleges / Ösztönző</td></tr>
+        <tr><td><strong>Quad2</strong></td><td>Inflationary Boom</td><td>+</td><td>+</td><td>Megszorító</td></tr>
+        <tr><td><strong>Quad3</strong></td><td>Inflationary Bust <em>(Stagfláció)</em></td><td>−</td><td>+</td><td>Semleges / Megszorító</td></tr>
+        <tr><td><strong>Quad4</strong></td><td>Disinflationary Bust <em>(Recesszió)</em></td><td>−</td><td>−</td><td>Ösztönző / Semleges</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>2. Infláció: Teljes CPI vs. Mag-CPI</h2>
+
+  <h3>2.1 Az éves CPI alakulása</h3>
+
+  <div class="section-label">2. táblázat · Teljes CPI vs. Mag-CPI (éves változás)</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Hónap</th><th>Teljes CPI (é/é)</th><th>Mag-CPI (é/é)</th><th>Spread</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2025. jún.</td><td>3,0%</td><td>3,2%</td><td>−0,2pp</td></tr>
+        <tr><td>2025. szept.</td><td>3,0%</td><td>3,0%</td><td>0,0pp</td></tr>
+        <tr><td>2025. dec.</td><td>2,7%</td><td>2,8%</td><td>−0,1pp</td></tr>
+        <tr><td>2026. jan.</td><td>2,4%</td><td>2,5%</td><td>−0,1pp <em>(mélypontja)</em></td></tr>
+        <tr><td>2026. febr.</td><td>2,8%</td><td>2,5%</td><td>+0,3pp</td></tr>
+        <tr><td>2026. márc.</td><td>3,3%</td><td>2,6%</td><td>+0,7pp</td></tr>
+        <tr><td>2026. ápr.</td><td>3,8%</td><td>2,8%</td><td>+1,0pp</td></tr>
+        <tr><td>2026. máj.</td><td><strong>4,2%</strong></td><td><strong>2,9%</strong></td><td><strong>+1,3pp</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.78rem; color:var(--muted); font-style:italic;">Forrás: BLS / FRED. 2025 okt.–nov. becsült (lásd módszertani megjegyzést).</p>
+
+  <div class="op-box">
+    <span class="op-label">Kulcs diagnosztikai jel</span>
+    <p>A teljes CPI (4,2%) és a mag-CPI (2,9%) közötti növekvő különbség egy <strong>külső energetikai ellátási sokk</strong> egyértelmű jele, nem strukturális kereslet-vezérelt inflációé. Általánosított inflációnál a teljes és mag-CPI felfelé konvergál. Itt divergálnak — ez megerősíti a sokk külső eredetét.</p>
+  </div>
+
+  <h3>2.2 A kiváltó ok: az USA/Izrael vs. Irán konfliktus</h3>
+
+  <ul>
+    <li><strong>2026. január:</strong> CPI az időszak mélypontján (2,4%). Konfliktus még nem kezdődött.</li>
+    <li><strong>2026. február 28.:</strong> Ellenségeskedések megkezdődnek. A Brent emelkedni kezd.</li>
+    <li><strong>2026. március–május:</strong> CPI: 3,3% → 3,8% → 4,2%. Az energia a havi növekedés >60%-át magyarázza.</li>
+    <li>Benzin <strong>+40,9% éves szinten</strong> 2026 májusában. Fűtőolaj <strong>+58,9%</strong>.</li>
+  </ul>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>3. A Brent-ár: a legfontosabb proxy</h2>
+
+  <figure class="article-img">
+    <img src="../img/macro-eeuu-brent.png" alt="Brent Nyersolaj Spot — Heti grafikon 2024. május – 2026. június">
+    <figcaption>2. ábra. Brent Nyersolaj Spot — Heti grafikon (2024. május – 2026. június). Forrás: ActivTrades / TradingView.</figcaption>
+  </figure>
+
+  <h3>3.1 Három jól elkülöníthető fázis</h3>
+
+  <ul>
+    <li><strong>Konfliktus előtt (2026. februárig):</strong> Brent $60–$80 sávban, csökkenő trenddel.</li>
+    <li><strong>Háborús sokk (2026. február–május):</strong> Erőteljes emelkedés ~$120-ra a Hormuzi-szoros lezárása és a geopolitikai kockázati prémium miatt.</li>
+    <li><strong>Jelenlegi összeomlás:</strong> ~$120-ról $77,91-re esett (−35% a csúcsoktól). Az ár áttöri a mozgóátlagot lefelé és a konfliktus előtti szintek alatt kereskedik.</li>
+  </ul>
+
+  <div class="op-box">
+    <span class="op-label">Dezinflációs következmény</span>
+    <p>A $78-as Brent-árral és a mozgóátlag alatt, a CPI energiakomponense — amely márciustól májusig a havi növekedés több mint 60%-át magyarázta — <strong>erősen vissza fog fordulni</strong> a következő 1–2 adatközlésen. A júniusi CPI (<strong>2026. július 14-i</strong> közzététel) lesz az első mérés, amely ezt a megfordulást rögzíti.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>4. Gazdasági aktivitás: a vízszintes tengely</h2>
+
+  <h3>4.1 Reál-GDP</h3>
+
+  <div class="section-label">3. táblázat · USA reál-GDP negyedévenként (SAAR)</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Negyedév</th><th>Reálnövekedés (SAAR)</th><th>Megjegyzések</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2025 Q1</td><td>−0,6%</td><td>Zsugorodás. Vámhatás / bizonytalanság.</td></tr>
+        <tr><td>2025 Q2</td><td>+3,8%</td><td>Erős visszapattanás. Csökkenő import + fogyasztás.</td></tr>
+        <tr><td>2025 Q3</td><td>+4,4%</td><td>A közelmúlt ciklikus csúcsa.</td></tr>
+        <tr><td>2025 Q4</td><td>+0,5%</td><td>Éles lassulás. Geopolitikai feszültségek kezdete.</td></tr>
+        <tr><td><strong>2026 Q1</strong></td><td><strong>+1,6%</strong></td><td>BEA 2. becslés. Tartalmazza a konfliktus kezdetét.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>4.2 Vállalati nyereségek (BEA/NIPA)</h3>
+
+  <div class="section-label">4. táblázat · Vállalati nyereségek IVA- és CCAdj-kiigazítással</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Negyedév</th><th>Negyedéves változás</th><th>Trend</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2025 Q2</td><td>+$6,8 Mrd</td><td>Felépülés kezdete.</td></tr>
+        <tr><td>2025 Q3</td><td>+$166,1 Mrd</td><td>Erős gyorsulás.</td></tr>
+        <tr><td>2025 Q4</td><td>+$246,9 Mrd</td><td>Csúcs. Évek óta a legnagyobb növekedés.</td></tr>
+        <tr><td><strong>2026 Q1</strong></td><td>+$40,4 Mrd</td><td>Éles lassulás. Konfliktus folyamatban.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>4.3 ISM PMI-k</h3>
+
+  <div class="section-label">5. táblázat · ISM feldolgozóipari és szolgáltatási PMI</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Hónap</th><th>ISM Feldolg.</th><th>ISM Szolgált.</th><th>Értékelés</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2025. jún.–szept.</td><td>47–49</td><td>51–55</td><td>Ipar zsugorodik. Szolgáltatások bővülnek.</td></tr>
+        <tr><td>2025. okt.–dec.</td><td>47,5–48,2</td><td>52,6–54,4</td><td>Ipar: 10. egymást követő hónap zsugorodás.</td></tr>
+        <tr><td>2026. jan.</td><td>50,9</td><td>52,8</td><td>Ipar először tér vissza bővülésbe.</td></tr>
+        <tr><td>2026. febr.</td><td>52,4</td><td>56,1</td><td>Mindkét szektorban konszolidálódó bővülés.</td></tr>
+        <tr><td>2026. márc.</td><td>52,7</td><td>54,0</td><td>Első adat iráni háborús hatással.</td></tr>
+        <tr><td>2026. ápr.</td><td>52,7</td><td>53,6</td><td>Árak robbannak (84,6). PMI stabil.</td></tr>
+        <tr><td><strong>2026. máj.</strong></td><td><strong>54,0</strong></td><td><strong>54,5</strong></td><td>Ipari csúcs 2022. május óta. Szolgáltatások: 23. bővülési hónap.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="op-box">
+    <span class="op-label">Figyelemre méltó adat</span>
+    <p>Az ISM feldolgozóipari PMI <strong>54,0-ra emelkedett 2026 májusában</strong> — legmagasabb 2022 május óta —, annak ellenére, hogy a megkérdezettek 42%-a az iráni háborút nevezte meg negatív tényezőként. Az ipari bővülés még háborús környezetben is konszolidálódik.</p>
+  </div>
+
+  <h3>4.4 S&P500 EPS: Történelmi meglepetés 2026 Q1-ben</h3>
+
+  <figure class="article-img">
+    <img src="../img/macro-eeuu-eps-paths.jpg" alt="SPX Index — EPS becslési útvonalak negyedévenként. n = 81 negyedév (2006Q1–2026Q1)">
+    <figcaption>3. ábra. SPX Index — EPS becslési útvonalak negyedévenként. 100-ra normalizálva az eredményhónap első kereskedési napján. n = 81 negyedév (2006Q1–2026Q1). Forrás: The Macro Tourist.</figcaption>
+  </figure>
+
+  <p>A grafikon üzenete egyértelmű: a 0. nap előtti 30 napban a 2026 Q1 EPS-becslések jelentősen lefelé kerültek revidálásra — a konfliktus kezdete által keltett bizonytalanságot tükrözve. Az elemzők nyereségromlást anticipáltak. Azonban amint a tényleges eredmények megjelentek (0. naptól), a becslések <strong>történelmi mértékben robbantak felfelé</strong>, elérve ~112-t a 100-as alapon — messze meghaladva a 81 elemzett negyedév bármelyikét.</p>
+
+  <div class="op-box">
+    <span class="op-label">A tézis megerősítése</span>
+    <p>A 2026 Q1 történelmi EPS-meglepetése megerősíti, hogy a vállalati szektor <strong>erő</strong>, nem törékenység pozíciójából működik. Egy gazdaság, ahol a nyereségek historikusan pozitív meglepetésszinten vannak, a PMI-k bővülnek és a munkaerőpiac szilárd, és amely ráadásul hamarosan dezinflációs enyhülést fog kapni a Brent visszaesésétől, ideális feltételeket nyújt a Goldilocks-forgatókönyvhöz.</p>
+  </div>
+
+  <h3>4.5 Big Tech Capex: Rekord nyereségek példátlan beruházás mellett</h3>
+
+  <figure class="article-img">
+    <img src="../img/macro-eeuu-capex-bigtech.jpg" alt="Big Tech tőkekiadások vs. szabad cash flow (2015–2027p)">
+    <figcaption>4. ábra. Big Tech tőkekiadások vs. szabad cash flow (2015–2027p). Microsoft, Meta, Google és Amazon összesítve. Előrejelzések elemzői konszenzus-becslések alapján. Forrás: Financial Times / S&P Visible Alpha.</figcaption>
+  </figure>
+
+  <p>A négy nagy összesített Capex-e a 2015-ös $0,5 billió alatti szintről <strong>$2 billióra nőtt 2026-ra</strong>. Ez az AI-infrastruktúráért folyó verseny tükrözi: adatközpontok, chipek, felhőalapú számítástechnikai hálózatok. Ami igazán figyelemre méltó: az óriási beruházás ellenére az előrejelzések azt mutatják, hogy a szabad cash flow <strong>összeszorul ugyan, de pozitív marad</strong> — ezek a vállalatok elegendő operatív pénzáramot termelnek saját terjeszkedésük finanszírozásához.</p>
+
+  <div class="pullquote">
+    <p>A fenti négy alfejezet (GDP, BEA-nyereségek, PMI-k, EPS és Big Tech Capex) következetes, konvergens képet fest: az USA gazdasági aktivitása robusztus. Az egyetlen változó, amely meghatározza, hogy a két jobb oldali kvadráns (Quad1 vagy Quad2) közül melyikben vagyunk, az infláció.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>5. Munkaerőpiac</h2>
+
+  <figure class="article-img">
+    <img src="../img/macro-eeuu-initial-claims.jpg" alt="Heti munkanélküliségi segélykérelmek (2021. júl. – 2026. jún.)">
+    <figcaption>5. ábra. Heti munkanélküliségi segélykérelmek (2021. júl. – 2026. jún.). Az árnyékolt területek az USA recesszióit jelzik. Forrás: U.S. Employment and Training Administration via FRED® / fred.stlouisfed.org.</figcaption>
+  </figure>
+
+  <div class="section-label">6. táblázat · USA munkaerőpiaci mutatók</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Mutató</th><th>Érték</th><th>Kontextus</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Kérelmek (jún. 6. hete)</td><td>229K</td><td>Legmagasabb 2026. február óta. Még egészséges sávban.</td></tr>
+        <tr><td>4 hetes mozgóátlag (máj.)</td><td>209K</td><td>Historikusan alacsony szint.</td></tr>
+        <tr><td>Munkanélküliségi ráta</td><td>4,3%</td><td>3. egymást követő stabil hónap.</td></tr>
+        <tr><td>Nem mezőgazdasági munkahelyek (2026. máj.)</td><td>+172K</td><td>Az elemzői konszenzus felett.</td></tr>
+        <tr><td>ISM Foglalkoztatás Ipar (máj.)</td><td>48,6</td><td>Még 50 alatt, de javuló.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>6. Kvadráns-pozicionálás: Quad2-ből Quad1-be</h2>
+
+  <h3>6.1 Jelenlegi diagnózis: Quad2 (Inflationary Boom)</h3>
+
+  <ul>
+    <li><strong>Vízszintes tengely (+):</strong> Pozitív GDP, bővülő PMI-k, emelkedő vállalati nyereségek, szilárd munkaerőpiac.</li>
+    <li><strong>Függőleges tengely (+):</strong> Teljes CPI 4,2% éves szinten, három egymást követő hónapban emelkedve.</li>
+  </ul>
+
+  <div class="op-box">
+    <span class="op-label">Becsült időzítés</span>
+    <p>A Quad2 → Quad1 átmenet a 2026 júliusi–szeptemberi adatokban materializálódhat. Az elemzés legfontosabb dátuma <strong>2026. július 14.</strong>, a 2026. júniusi CPI közzétételének napja. Ez lesz az első mérés, amely rögzíti a Brent $120-ról $78-ra való esését.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>7. Kockázatok és figyelendő tényezők</h2>
+
+  <div class="section-label">7. táblázat · Kockázati térkép a Quad2 → Quad1 átmenethez</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Kockázat</th><th>Valószínűség</th><th>Hatás</th><th>Jelzőváltozó</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Iráni konfliktus újraéledése</td><td><span class="badge badge-warn">Alacsony-közepes</span></td><td><span class="badge badge-bear">Nagyon magas</span></td><td>Brent &gt;$95</td></tr>
+        <tr><td>Mag-CPI gyorsul &gt;3,2%-ra</td><td><span class="badge badge-warn">Közepes</span></td><td><span class="badge badge-bear">Magas</span></td><td>2026. júl. CPI</td></tr>
+        <tr><td>Másodkörös hatások a szolgáltatásokban</td><td><span class="badge badge-warn">Közepes</span></td><td><span class="badge badge-warn">Közepes</span></td><td>Lakhatás + Közlekedés CPI</td></tr>
+        <tr><td>Hosszú távú munkanélküliség romlása</td><td><span class="badge badge-bull">Alacsony</span></td><td><span class="badge badge-warn">Közepes</span></td><td>Kérelmek &gt;260K</td></tr>
+        <tr><td>Globális keresleti recesszió</td><td><span class="badge badge-bull">Alacsony</span></td><td><span class="badge badge-bear">Magas</span></td><td>Globális PMI-k + Brent &lt;$65</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="op-box">
+    <span class="op-label">Módszertani figyelmeztetés</span>
+    <p>Az elbeszélés koherens és az adatok jól illeszkednek. Pontosan akkor, amikor az elemzés eleganssá válik, szkepticizmust kell aktiválni. A piac már tudja mindezt és előre beárazza. Mielőtt e tézis alapján cselekedne, ellenőrizze, hogy a Quad2→Quad1 átmenet mekkora részét tükrözik már az eszközárak (S&P500, kamatok).</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>8. Alternatív forgatókönyv: Meghosszabbított Quad2</h2>
+
+  <h3>8.1 A június 17-i FOMC: tények és jelzések</h3>
+
+  <ul>
+    <li>Kamatok változatlanul <strong>3,5%–3,75%</strong> (12-0), negyedik egymást követő szüneteltetés 2026 elejétől. Teljes CPI: 4,2% — legmagasabb 2023 április óta.</li>
+    <li>A dot plot a 2026-os inflációs előrejelzést felfelé revidálta <strong>3,6% (teljes) és 3,3% (mag)</strong> szintre — a márciusi 2,7%-hoz képest. A 18 szavazó tagból kilenc jelezte, hogy az év vége előtt legalább egy kamatemelés szükséges lesz.</li>
+    <li>Warsh megszüntette a <em>forward guidance</em>-t a közleményekből. Az állásfoglalás <strong>114 szóra zsugorodott három bekezdésben</strong>.</li>
+    <li>A piacok ékesszólóan reagáltak: 2 éves kötvényhozam <strong>+16 bázispont</strong> 4,21%-ra. S&P500 −1,21%. Arany −2%. Dollár +1%, majdnem egy év legjobb teljesítménye.</li>
+  </ul>
+
+  <h3>8.2 A Fed–EKB divergencia: ugyanaz az ok, ellentétes döntések</h3>
+
+  <div class="section-label">10. táblázat · Fed vs. EKB ugyanazon inflációs sokk előtt</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Mutató</th><th>Fed (USA) — 2026. jún. 17.</th><th>EKB (Eurozóna) — 2026. jún. 11.</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Teljes infláció</td><td>4,2% (2026. máj.)</td><td>3,2% (2026. máj.)</td></tr>
+        <tr><td>Kamatdöntés</td><td>Változatlan (3,5%–3,75%)</td><td>Emelés +25bp (2,25%-ra)</td></tr>
+        <tr><td>GDP</td><td>+1,6% (2026 Q1, SAAR)</td><td>−0,2% (2026 Q1)</td></tr>
+        <tr><td>Kijelölt ok</td><td>„Tranzitoros kínálati sokk"</td><td>„Nem hagyhatjuk figyelmen kívül ezt a sokkot"</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>8.3 Az adósság-likvidálási hipotézis</h3>
+
+  <p>Az USA körülbelül <strong>$39 billió</strong> állami adóssággal rendelkezik. Tartós 4–5%-os éves inflációval az adósság reálértéke évente körülbelül ugyanannyival erodálódik. Tíz év alatt, 4,5%-os átlagos inflációval az adósság reálértéke kb. <strong>36%-kal csökken — visszafizetés vagy kiadáscsökkentés nélkül</strong>. A technikai neve: <em>pénzügyi represszió</em>.</p>
+
+  <div class="op-box">
+    <span class="op-label">Szellemi becsületesség megjegyzés</span>
+    <p>Az adósság-likvidálási hipotézis nem feltételez összeesküvést a Kincstár és a Fed között. Csak azt feltételezi, hogy az <strong>implicit inflációs toleranciaküszöb megemelkedett</strong> nagyon magas adósság, szilárd gazdaság és külső energetikai sokk kontextusában. Ez empirikusan ellenőrizhető hipotézis a reálkamatok időbeli alakulásán keresztül.</p>
+  </div>
+
+  <h3>8.6 Az arany mint a forgatókönyv hőmérője</h3>
+
+  <figure class="article-img">
+    <img src="../img/macro-eeuu-gold.jpg" alt="Arany spot (USD/OZ) — Heti grafikon (2023. nov. – 2026. jún.)">
+    <figcaption>6. ábra. Arany spot (USD/OZ) — Heti grafikon (2023. nov. – 2026. jún.). A sárga vonal a mozgóátlag. Forrás: TVC / ActivTrades.</figcaption>
+  </figure>
+
+  <p>A grafikon parabolikus emelkedést mutat ~$2.000-ről 2024-ben ~$5.350-es csúcsokra 2026 március–áprilisában — <strong>160%-nál nagyobb felértékelődés két év alatt</strong> —, amelyet −20%-os korrekció követett a jelenlegi $4.269-re. Makrogazdasági olvasatban: a parabolikus emelkedés tökéletesen beárazza a Quad2-forgatókönyvet és a geopolitikai sokkot. Az azt követő korrekció azt tükrözi, hogy a piac elkezdi beárazni a Quad1-átmenetet.</p>
+
+  <div class="op-box">
+    <span class="op-label">Az arany mint mérőeszköz: két jelzés, két forgatókönyv</span>
+    <p><strong>Az arany folytatja esését $3.800–$4.000 felé</strong> → A piac Quad1-et (Goldilocks) áraz be. Infláció enyhül, reálkamatok javulnak. Fő tézis megerősítve.</p>
+    <p><strong>Az arany stabilizálódik és áttöri $5.350-et felfelé</strong> → A piac meghosszabbított Quad2-t áraz be. Tartós infláció, tartósan negatív reálkamatok, csendes adósságlikvidálás folyamatban. Alternatív forgatókönyv megerősítve.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>9. Következtetések és következő lépések</h2>
+
+  <div class="scenario-box bull">
+    <span class="scenario-label">A forgatókönyv — Fő tézis: átmenet Quad1-be (Goldilocks) 2–3 hónapon belül</span>
+    <p>A Brent 35%-ot korrigált a csúcsokról $78-ra, mozgóátlag és konfliktus előtti szintek alatt. A CPI energiakomponense erősen visszafordul a 2026 júniusi–augusztusi adatokban.</p>
+    <p>A Quad1 historikusan a részvények számára legkedvezőbb rezsim: a marzsok javulnak a csökkenő energiaköltségek mellett, a Fed visszanyeri a kamatvágási mozgásteret, a reálfogyasztás helyreáll a dezinflációval, és a részvénymultiplikátorok bővülnek.</p>
+    <ul>
+      <li><strong>Megerősítő jelzés:</strong> az arany folytatja a korrekcióját $3.800–$4.000 felé.</li>
+      <li><strong>Kulcsdátum:</strong> 2026. júniusi CPI 2026. július 14-én.</li>
+    </ul>
+  </div>
+
+  <div class="scenario-box alt">
+    <span class="scenario-label">B forgatókönyv — Alternatív: meghosszabbított Quad2 (kontrollált infláció 4%–5%)</span>
+    <p>A Fed implicit módon megemelte az inflációs toleranciaküszöbét. Negatív reálkamatokkal (3,625% nominális vs. 4,2% infláció) de facto pénzügyi represszióst alkalmaz, amely reálértéken erodálja a $39 billió állami adósságot.</p>
+    <p>A Fed–EKB divergencia az ortodox doktrína alapján legnehezebben magyarázható empirikus adat: az EKB emel 3,2%-os inflációnál és zsugorodó gazdaságnál; a Fed nem cselekszik 4,2%-os inflációnál és növekvő gazdaságnál.</p>
+    <ul>
+      <li><strong>Megerősítő jelzés:</strong> az arany visszapattan és áttöri $5.350-et felfelé.</li>
+    </ul>
+  </div>
+
+  <div class="section-label">8. táblázat · Kulcsfontosságú közzétételek naptára</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Dátum</th><th>Adat</th><th>Miért fontos</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>2026. júl. 14.</strong></td><td>2026. júniusi CPI (BLS)</td><td>Első mérés Brent &lt;$80 mellett. Tézis megerősítve vagy megcáfolva.</td></tr>
+        <tr><td>2026. jún. 25.</td><td>Q1 GDP 3. becslés + Vállalati nyereségek (BEA)</td><td>Nyereség- és GDP-revízió. Teljes Q1 adatok.</td></tr>
+        <tr><td>2026. júl. 1.</td><td>ISM Feldolg. PMI június</td><td>Ipari bővülés folytatódása.</td></tr>
+        <tr><td>Heti</td><td>Segélykérelmek (DOL/FRED)</td><td>Hosszú távú munkanélküliség romlásának figyelése.</td></tr>
+        <tr><td>Napi</td><td>Brent-ár (CPI proxy)</td><td>Az elemzés legfontosabb előrejelző változója.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="font-size:0.82rem; color:var(--muted); font-style:italic; margin-top: 1rem;">Módszertani megjegyzés: A 2025. október–novemberi CPI-adatok nem állnak rendelkezésre hivatalosan a szövetségi kormány azon időszakra eső leállása miatt. A Cleveland Fed nowcasting modell becsléseit használtuk a hiány pótlásához, amelyek konzisztensek a rendelkezésre álló előző és következő adatokkal.</p>
+
+  <div class="disclaimer">
+    <strong>Jogi nyilatkozat:</strong> Ez a cikk makrogazdasági elemzési gyakorlat tájékoztatási és oktatási célokból. Nem minősül pénzügyi tanácsadásnak vagy befektetési ajánlásnak. A pénzügyi piacok természetüknél fogva bizonytalanok. Minden befektetési döntés kizárólag az olvasó felelőssége.
+  </div>
+
+</div><!-- /container -->
+
+<div class="container" style="padding: 3rem 2rem; border-top: 1px solid var(--rule);">
+  <p style="font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.5rem;">Comments · Comentarios · Kommentare · Megjegyzések</p>
+  <script src="https://giscus.app/client.js"
+          data-repo="Pav-DerHexer/Criptomaneras"
+          data-repo-id="R_kgDORl5KmA"
+          data-category="Comments"
+          data-category-id="DIC_kwDORl5KmM4C7qex"
+          data-mapping="specific"
+          data-term="article-2026-06-18-analisis-macro-eeuu"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="light"
+          data-lang="hu"
+          crossorigin="anonymous"
+          async>
+  </script>
+</div>
+
+<footer>
+  © 2026 Criptomaneras &nbsp;·&nbsp; P.V. &nbsp;·&nbsp;
+  <a href="https://t.me/+tjbF3GaGnGwzNzE8" style="color:var(--muted)">Telegram</a>
+</footer>
+
+</body>
+</html>

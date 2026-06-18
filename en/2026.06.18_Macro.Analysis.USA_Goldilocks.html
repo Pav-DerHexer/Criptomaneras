@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>US Macroeconomic Analysis — June 2026: Heading to Goldilocks?</title>
+<link rel="alternate" hreflang="en" href="./2026.06.18_Macro.Analysis.USA_Goldilocks.html">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a0a0a;
+    --paper: #f4f0e8;
+    --accent: #c8392b;
+    --accent2: #1a3a5c;
+    --muted: #6b6560;
+    --rule: #d4cfc7;
+    --gold: #b8860b;
+    --green: #2e7d32;
+    --amber: #e65100;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  .home-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 2rem;
+  }
+
+  .home-nav > a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent2);
+    text-decoration: none;
+  }
+
+  .home-nav > a:hover { color: var(--accent); }
+
+  .lang-bar { display: flex; align-items: center; gap: 0.35rem; }
+  .lang-bar a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .lang-bar a:hover { color: var(--accent2); }
+  .lang-bar a.active { color: var(--accent2); text-decoration: underline; text-underline-offset: 3px; }
+  .lang-bar .sep { color: var(--rule); font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; }
+
+  header {
+    border-bottom: 3px double var(--ink);
+    padding: 2rem 0 0;
+    text-align: center;
+  }
+
+  .header-eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    max-width: 820px;
+    margin: 0 auto 1.5rem;
+    padding: 0 2rem;
+    letter-spacing: -0.02em;
+  }
+
+  h1 em { font-style: italic; color: var(--accent); }
+
+  .subtitle {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--muted);
+    max-width: 640px;
+    margin: 0 auto 1rem;
+    padding: 0 2rem;
+  }
+
+  .header-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    border-top: 1px solid var(--rule);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .container { max-width: 720px; margin: 0 auto; padding: 0 2rem; }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin: 3rem 0 1.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 2.5rem 0 1rem;
+    color: var(--accent2);
+  }
+
+  p { margin-bottom: 1.2rem; font-size: 0.95rem; }
+  strong { font-weight: 500; }
+  a { color: var(--accent2); }
+  ul, ol { margin: 0.5rem 0 1.2rem 1.5rem; font-size: 0.95rem; line-height: 1.9; }
+
+  .lead { font-size: 1.1rem; font-weight: 400; line-height: 1.8; margin: 2.5rem 0; }
+
+  .pullquote {
+    margin: 2.5rem 0;
+    padding: 2rem 2rem 2rem 3rem;
+    border-left: 4px solid var(--accent);
+    background: white;
+    position: relative;
+  }
+  .pullquote::before {
+    content: '\201C';
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: var(--accent);
+    opacity: 0.2;
+    position: absolute;
+    top: -1rem; left: 0.5rem;
+    line-height: 1;
+  }
+  .pullquote p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  th {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: var(--ink);
+    color: white;
+    padding: 0.6rem 0.9rem;
+    text-align: left;
+  }
+  td { padding: 0.75rem 0.9rem; border-bottom: 1px solid var(--rule); vertical-align: top; line-height: 1.5; }
+  tr:nth-child(even) td { background: white; }
+
+  .badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0.15rem 0.5rem;
+    border-radius: 2px;
+    display: inline-block;
+  }
+  .badge-bull  { background: #d5f0e0; color: var(--green); }
+  .badge-bear  { background: #fde8e8; color: var(--accent); }
+  .badge-warn  { background: #fef3cd; color: var(--amber); }
+  .badge-blue  { background: #dce8f5; color: var(--accent2); }
+
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: var(--ink);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    margin: 1.5rem 0 0.75rem;
+    display: inline-block;
+  }
+
+  .article-img { margin: 1.5rem 0; border: 1px solid var(--rule); background: white; }
+  .article-img img { width: 100%; display: block; }
+  .article-img figcaption {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    padding: 0.5rem 0.75rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .op-box {
+    border: 2px solid var(--ink);
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    background: white;
+    position: relative;
+  }
+  .op-box .op-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    position: absolute;
+    top: -0.55rem;
+    left: 1.2rem;
+    background: white;
+    padding: 0 0.4rem;
+  }
+  .op-box p { margin: 0; font-size: 0.92rem; }
+  .op-box p + p { margin-top: 0.75rem; }
+  .op-box ul { margin: 0.5rem 0 0 1.2rem; font-size: 0.92rem; }
+
+  .scenario-box {
+    border: 1px solid var(--rule);
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    background: white;
+    position: relative;
+  }
+  .scenario-box .scenario-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    position: absolute;
+    top: -0.55rem;
+    left: 1.2rem;
+    background: white;
+    padding: 0 0.4rem;
+  }
+  .scenario-box.bull .scenario-label { color: var(--green); }
+  .scenario-box.alt .scenario-label { color: var(--amber); }
+  .scenario-box p { margin: 0 0 0.75rem; font-size: 0.92rem; }
+  .scenario-box p:last-child { margin-bottom: 0; }
+  .scenario-box ul { margin: 0.25rem 0 0.75rem 1.2rem; font-size: 0.92rem; }
+
+  .disclaimer {
+    margin: 3rem 0 1rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid var(--rule);
+    font-size: 0.78rem;
+    font-style: italic;
+    color: var(--muted);
+    line-height: 1.6;
+    background: white;
+  }
+
+  footer {
+    border-top: 3px double var(--ink);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+    .pullquote { padding: 1.5rem 1.5rem 1.5rem 2rem; }
+    .header-meta { flex-direction: column; gap: 0.4rem; }
+    .lang-bar { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="home-nav">
+  <a href="index.html">← Home</a>
+  <div class="lang-bar">
+    <a href="../es/2026.06.18_Analisis.Macro.EEUU_Goldilocks.html">ES</a>
+    <span class="sep">·</span>
+    <a href="./2026.06.18_Macro.Analysis.USA_Goldilocks.html" class="active">EN</a>
+    <span class="sep">·</span>
+    <a href="../de/2026.06.18_Makrooekonomische.Analyse.USA_Goldilocks.html">DE</a>
+    <span class="sep">·</span>
+    <a href="../hu/2026.06.18_Makrogazdasagi.Elemzes.USA_Goldilocks.html">HU</a>
+  </div>
+</nav>
+
+<header>
+  <div class="header-eyebrow">Macroeconomic Analysis &middot; United States &middot; June 2026</div>
+  <h1>The Four Quadrants Framework:<br><em>Heading to Goldilocks?</em></h1>
+  <p class="subtitle">The US is in Quad2 (Inflationary Boom). With Brent down 35% from its highs, conditions for the transition to Goldilocks are materialising. The key date: July 14, 2026.</p>
+  <div class="header-meta">
+    <span>P.V.</span>
+    <span>June 2026</span>
+    <span>~25 min read</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <p class="lead">This analysis evaluates the current position of the US economy within the Four Macroeconomic Quadrants framework, with the aim of identifying the prevailing market regime and anticipating its likely evolution over the next 2–3 months.</p>
+
+  <div class="op-box">
+    <span class="op-label">Central thesis</span>
+    <p>The US is currently in <strong>Quad2 (Inflationary Boom)</strong>: positive economic growth with rising inflation. However, the primary driver of the inflationary surge has been an external energy shock triggered by the US/Israel vs Iran conflict that began on February 28, 2026. With Brent falling from highs of ~$120 to $78 (−35%), the conditions for a transition to <strong>Quad1 (Disinflationary Boom / "Goldilocks")</strong> are materialising. The key confirmation date is <strong>July 14, 2026</strong>, when the June CPI is published.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>1. The Four Quadrants Framework</h2>
+
+  <p>The Four Quadrants model classifies the macroeconomic environment along two axes: the direction of economic activity (growth or contraction) and the direction of prices (inflation or disinflation). Each quadrant defines a distinct market regime with specific implications for monetary policy and asset allocation.</p>
+
+  <figure class="article-img">
+    <img src="../img/macro-eeuu-quadrants.jpg" alt="The Four Macroeconomic Quadrants Framework">
+    <figcaption>Figure 1. The Four Macroeconomic Quadrants Framework. Source: own elaboration.</figcaption>
+  </figure>
+
+  <div class="section-label">Table 1 · The Four Quadrants and Their Characteristics</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Quadrant</th><th>Regime</th><th>Activity</th><th>Prices</th><th>Monetary Policy</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Quad1</strong></td><td>Disinflationary Boom <em>(Goldilocks)</em></td><td>+</td><td>−</td><td>Neutral / Accommodative</td></tr>
+        <tr><td><strong>Quad2</strong></td><td>Inflationary Boom</td><td>+</td><td>+</td><td>Restrictive</td></tr>
+        <tr><td><strong>Quad3</strong></td><td>Inflationary Bust <em>(Stagflation)</em></td><td>−</td><td>+</td><td>Neutral / Restrictive</td></tr>
+        <tr><td><strong>Quad4</strong></td><td>Disinflationary Bust <em>(Recession)</em></td><td>−</td><td>−</td><td>Accommodative / Neutral</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>2. Inflation: Headline vs. Core CPI</h2>
+
+  <h3>2.1 Year-on-Year CPI Evolution</h3>
+
+  <p>The most relevant indicator for quadrant positioning is inflation, and within it the distinction between <em>headline</em> inflation (total) and <em>core</em> inflation (excluding energy and food).</p>
+
+  <div class="section-label">Table 2 · Headline vs. Core CPI (year-on-year)</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Month</th><th>Headline CPI (y/y)</th><th>Core CPI (y/y)</th><th>Spread</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Jun 2025</td><td>3.0%</td><td>3.2%</td><td>−0.2pp</td></tr>
+        <tr><td>Sep 2025</td><td>3.0%</td><td>3.0%</td><td>0.0pp</td></tr>
+        <tr><td>Dec 2025</td><td>2.7%</td><td>2.8%</td><td>−0.1pp</td></tr>
+        <tr><td>Jan 2026</td><td>2.4%</td><td>2.5%</td><td>−0.1pp <em>(trough)</em></td></tr>
+        <tr><td>Feb 2026</td><td>2.8%</td><td>2.5%</td><td>+0.3pp</td></tr>
+        <tr><td>Mar 2026</td><td>3.3%</td><td>2.6%</td><td>+0.7pp</td></tr>
+        <tr><td>Apr 2026</td><td>3.8%</td><td>2.8%</td><td>+1.0pp</td></tr>
+        <tr><td>May 2026</td><td><strong>4.2%</strong></td><td><strong>2.9%</strong></td><td><strong>+1.3pp</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.78rem; color:var(--muted); font-style:italic;">Source: BLS / FRED. Oct–Nov 2025 estimated (see methodological note).</p>
+
+  <div class="op-box">
+    <span class="op-label">Key diagnostic signal</span>
+    <p>The widening spread between <em>headline</em> (4.2%) and <em>core</em> (2.9%) is the unmistakeable signature of an <strong>external energy supply shock</strong>, not structural demand-driven inflation. In broad-based inflation, headline and core converge upward. Here they diverge, confirming the exogenous origin of the shock.</p>
+  </div>
+
+  <h3>2.2 The Trigger: The US/Israel vs Iran Conflict</h3>
+
+  <p>The conflict began on February 28, 2026 with surprise strikes on Iranian facilities. Iran's response included the selective closure of the Strait of Hormuz — through which ~20% of global oil transits — and attacks on regional energy infrastructure. The temporal correlation with the inflationary surge is direct:</p>
+
+  <ul>
+    <li><strong>January 2026:</strong> CPI at the period's trough (2.4%). Conflict not yet started.</li>
+    <li><strong>February 28, 2026:</strong> Hostilities begin. Brent starts its ascent.</li>
+    <li><strong>March–May 2026:</strong> CPI climbs 3.3% → 3.8% → 4.2%. Energy explains >60% of each monthly increase.</li>
+    <li>Gasoline <strong>+40.9% year-on-year</strong> in May 2026. Fuel oil <strong>+58.9%</strong>.</li>
+  </ul>
+
+  <p>The causality is direct: Hormuz closure → crude supply restriction → oil price rise → consumer gasoline 4–6 weeks later → next monthly CPI print.</p>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>3. Brent Price: The Most Important Proxy</h2>
+
+  <p>Brent crude oil acts as a leading indicator of CPI with a 6–8 week lag. Its recent evolution is the most relevant data point for anticipating the inflationary trajectory.</p>
+
+  <figure class="article-img">
+    <img src="../img/macro-eeuu-brent.png" alt="Brent Crude Oil Spot — Weekly chart May 2024 – June 2026">
+    <figcaption>Figure 2. Brent Crude Oil Spot — Weekly chart (May 2024 – June 2026). Source: ActivTrades / TradingView.</figcaption>
+  </figure>
+
+  <h3>3.1 Three Clearly Differentiated Phases</h3>
+
+  <ul>
+    <li><strong>Pre-conflict (until Feb 2026):</strong> Brent ranged $60–$80 with a downward trend. Moving average declining gently.</li>
+    <li><strong>War shock (Feb–May 2026):</strong> Violent spike to ~$120 driven by Hormuz closure and geopolitical risk premium.</li>
+    <li><strong>Current collapse:</strong> From ~$120 in May to $77.91 today (−35% from highs in a matter of weeks). Price breaks below its moving average and trades below pre-conflict levels.</li>
+  </ul>
+
+  <div class="op-box">
+    <span class="op-label">Disinflationary implication</span>
+    <p>With Brent at $78 and below its moving average, the energy component of CPI — which accounted for more than 60% of the monthly increase in March–May — <strong>will reverse sharply</strong> over the next 1–2 data prints. The June CPI (published <strong>July 14, 2026</strong>) will be the first reading to capture this reversal.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>4. Economic Activity: The Horizontal Axis</h2>
+
+  <p>While inflation is the ambiguous variable in the current analysis, economic activity variables present a consistent and positive signal across all indicators studied.</p>
+
+  <h3>4.1 Real GDP</h3>
+
+  <div class="section-label">Table 3 · US Real GDP by Quarter (SAAR)</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Quarter</th><th>Real growth (SAAR)</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Q1 2025</td><td>−0.6%</td><td>Contraction. Tariff impact / uncertainty.</td></tr>
+        <tr><td>Q2 2025</td><td>+3.8%</td><td>Strong rebound. Falling imports + consumption.</td></tr>
+        <tr><td>Q3 2025</td><td>+4.4%</td><td>Recent cycle peak.</td></tr>
+        <tr><td>Q4 2025</td><td>+0.5%</td><td>Sharp slowdown. Start of geopolitical tensions.</td></tr>
+        <tr><td><strong>Q1 2026</strong></td><td><strong>+1.6%</strong></td><td>BEA 2nd estimate. Includes conflict onset.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.78rem; color:var(--muted); font-style:italic;">Source: BEA. Q1 2026 = 2nd estimate (May 2026).</p>
+
+  <h3>4.2 Corporate Profits (BEA/NIPA)</h3>
+
+  <div class="section-label">Table 4 · Corporate Profits with IVA and CCAdj</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Quarter</th><th>Quarter-on-quarter change</th><th>Trend</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Q2 2025</td><td>+$6.8B</td><td>Recovery begins.</td></tr>
+        <tr><td>Q3 2025</td><td>+$166.1B</td><td>Strong acceleration.</td></tr>
+        <tr><td>Q4 2025</td><td>+$246.9B</td><td>Peak. Largest increase in years.</td></tr>
+        <tr><td><strong>Q1 2026</strong></td><td>+$40.4B</td><td>Sharp deceleration. Conflict ongoing.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.78rem; color:var(--muted); font-style:italic;">Source: BEA NIPA. Next revision: Jun 25, 2026.</p>
+
+  <p>Profits remain at high absolute levels. The Q1 2026 slowdown is consistent with energy margin compression from the conflict, not structural deterioration. The signal is positive for the activity axis, with a note of vigilance.</p>
+
+  <h3>4.3 ISM PMIs</h3>
+
+  <div class="section-label">Table 5 · ISM Manufacturing and Services PMIs</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Month</th><th>ISM Manufacturing</th><th>ISM Services</th><th>Reading</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Jun–Sep 2025</td><td>47–49</td><td>51–55</td><td>Manuf. contracting. Services expanding.</td></tr>
+        <tr><td>Oct–Dec 2025</td><td>47.5–48.2</td><td>52.6–54.4</td><td>Manuf. 10th consecutive month of contraction.</td></tr>
+        <tr><td>Jan 2026</td><td>50.9</td><td>52.8</td><td>Manuf. returns to expansion for 1st time.</td></tr>
+        <tr><td>Feb 2026</td><td>52.4</td><td>56.1</td><td>Expansion consolidated in both sectors.</td></tr>
+        <tr><td>Mar 2026</td><td>52.7</td><td>54.0</td><td>First reading with Iran war impact.</td></tr>
+        <tr><td>Apr 2026</td><td>52.7</td><td>53.6</td><td>Prices surge (84.6). PMI stable.</td></tr>
+        <tr><td><strong>May 2026</strong></td><td><strong>54.0</strong></td><td><strong>54.5</strong></td><td>Manuf. high since May 2022. 23rd month services expansion.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.78rem; color:var(--muted); font-style:italic;">Above 50 = expansion. Source: ISM.</p>
+
+  <div class="op-box">
+    <span class="op-label">Notable data point</span>
+    <p>ISM Manufacturing rose to <strong>54.0 in May 2026</strong>, its highest since May 2022, despite 42% of panellists citing the Iran war as an impact and 57% mentioning price volatility. Manufacturing expansion consolidates even in a wartime environment.</p>
+  </div>
+
+  <h3>4.4 S&P500 EPS: Historic Beat in Q1 2026</h3>
+
+  <p>The following chart, produced by The Macro Tourist, shows the normalised EPS (<em>Earnings Per Share</em>) trajectory of the S&P500 for each quarter from 2006Q1 to 2026Q1 (81 quarters total). Each quarter's EPS is anchored to 100 at the first trading day of the earnings month (day 0), making all quarters comparable. Grey lines are all historical quarters; the black line is the historical average; the red line is 2026Q1.</p>
+
+  <figure class="article-img">
+    <img src="../img/macro-eeuu-eps-paths.jpg" alt="SPX Index — EPS Estimate Paths by Quarter. n = 81 quarters (2006Q1–2026Q1)">
+    <figcaption>Figure 3. SPX Index — EPS Estimate Paths by Quarter. Normalised to 100 at the first trading day of the earnings month. n = 81 quarters (2006Q1–2026Q1). Source: The Macro Tourist.</figcaption>
+  </figure>
+
+  <p>The chart's message is unambiguous: in the 30 days before day 0, Q1 2026 EPS estimates were revised sharply lower — reflecting uncertainty generated by the conflict onset. Analysts anticipated earnings deterioration. Yet as actual results were published (from day 0 onward), estimates <strong>exploded higher in historic fashion</strong>, reaching ~112 on the 100 base, far above any other quarter in the 81 analysed.</p>
+
+  <ul>
+    <li>S&P500 companies proved more resilient to the energy shock than the market anticipated. <em>Pricing power</em> exceeded the historical average.</li>
+    <li>The divergence between bearish pre-results expectations and the bullish post-results reality is the <strong>largest in 20 years</strong>.</li>
+    <li>The consensus was incorrectly positioned: too pessimistic about the conflict's impact on margins.</li>
+    <li>In the Goldilocks thesis context, this is especially relevant: if profits held in full Quad2 with inflation at 4.2%, margin expansion in Quad1 (with falling energy costs) could be substantial.</li>
+  </ul>
+
+  <div class="op-box">
+    <span class="op-label">Thesis reinforcement</span>
+    <p>The historic Q1 2026 EPS beat confirms that the corporate sector is operating from a position of <strong>strength</strong>, not fragility. An economy with profits at historic positive-surprise levels, PMIs in expansion, and a solid labour market, about to receive disinflationary relief from falling Brent, meets the ideal conditions for the Goldilocks scenario.</p>
+  </div>
+
+  <h3>4.5 Big Tech Capex: Record Profits Despite Unprecedented Investment</h3>
+
+  <p>The following chart shows the evolution of capital expenditure (Capex) and free cash flow aggregated for the four major tech companies — Microsoft, Meta, Google, and Amazon — from 2015 through 2026–2027 projections.</p>
+
+  <figure class="article-img">
+    <img src="../img/macro-eeuu-capex-bigtech.jpg" alt="Big Tech capital spending vs. free cash flow (2015–2027p)">
+    <figcaption>Figure 4. Big Tech capital spending vs. free cash flow (2015–2027p). Aggregate of Microsoft, Meta, Google and Amazon. Projections based on analyst consensus estimates. Source: Financial Times / S&P Visible Alpha.</figcaption>
+  </figure>
+
+  <p>Aggregate Capex from the four majors has scaled from under $0.5 trillion in 2015 to over <strong>$2 trillion in 2026</strong>. This explosion reflects the race for AI infrastructure: data centres, chips, cloud computing networks. What is truly striking is not the Capex magnitude, but what happens to free cash flow: despite this massive investment, projections show FCF <strong>compresses but remains positive</strong>, confirming these companies generate sufficient operating cash to fund a substantial portion of their own expansion.</p>
+
+  <ul>
+    <li>Record Q1 2026 EPS beats are happening <strong>simultaneously with the largest capital investment cycle in tech history</strong>. Margins holding — and even beating expectations — in this context signals exceptional structural strength.</li>
+    <li>This level of AI Capex acts as an autonomous demand engine in the economy, sustaining employment and activity even as other sectors moderate.</li>
+    <li>The projected FCF compression for 2026–2027 introduces a note of caution: if the Fed does not cut rates, the cost of financing this Capex rises and could force downward EPS revisions for 2027.</li>
+  </ul>
+
+  <div class="pullquote">
+    <p>The four subsections above (GDP, BEA profits, PMIs, EPS and Big Tech Capex) paint a consistent, converging picture: US economic activity is robust. The only variable determining which of the two right-side quadrants (Quad1 or Quad2) we are in is inflation.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>5. Labour Market</h2>
+
+  <p>The labour market shows no recessionary signal. Initial jobless claims have remained within the historically healthy market band (190K–230K) throughout the period analysed.</p>
+
+  <figure class="article-img">
+    <img src="../img/macro-eeuu-initial-claims.jpg" alt="Weekly Initial Claims (Jul 2021 – Jun 2026). Shaded areas indicate US recessions">
+    <figcaption>Figure 5. Weekly Initial Claims (Jul 2021 – Jun 2026). Shaded areas indicate US recessions. Source: U.S. Employment and Training Administration via FRED® / fred.stlouisfed.org.</figcaption>
+  </figure>
+
+  <div class="section-label">Table 6 · US Labour Market Indicators</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Indicator</th><th>Value</th><th>Context</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Initial Claims (week of Jun 6)</td><td>229K</td><td>Highest since Feb 2026. Still in healthy band.</td></tr>
+        <tr><td>4-week moving average (May)</td><td>209K</td><td>Historically low level.</td></tr>
+        <tr><td>Unemployment rate</td><td>4.3%</td><td>3rd consecutive stable month.</td></tr>
+        <tr><td>Non-farm payrolls (May 2026)</td><td>+172K</td><td>Above analyst consensus.</td></tr>
+        <tr><td>ISM Employment Manuf. (May)</td><td>48.6</td><td>Still below 50 but improving.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.78rem; color:var(--muted); font-style:italic;">Sources: DOL, BLS, FRED, ISM.</p>
+
+  <p>A relevant nuance: workers unemployed for 27 weeks or more reached their highest level since late 2021, and median unemployment duration extended to <strong>11.6 weeks in May</strong>. Not an immediate deterioration signal, but a tail worth monitoring in H2 2026.</p>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>6. Quadrant Positioning: From Quad2 to Quad1</h2>
+
+  <h3>6.1 Current Diagnosis: Quad2 (Inflationary Boom)</h3>
+
+  <ul>
+    <li><strong>Horizontal axis (+):</strong> Positive GDP, PMIs in expansion, rising corporate profits, solid labour market.</li>
+    <li><strong>Vertical axis (+):</strong> Headline CPI at 4.2% year-on-year, rising for three consecutive months.</li>
+  </ul>
+
+  <h3>6.2 The Transition Scenario to Quad1 (Goldilocks)</h3>
+
+  <p>The central thesis is that inflation is predominantly a transitory external shock, not structural demand-driven inflation. Supporting arguments:</p>
+
+  <ul>
+    <li>The 1.3pp headline-core spread is the diagnostic signature of an energy shock.</li>
+    <li>Core CPI only rose from 2.5% to 2.9% throughout the entire conflict period: moderate.</li>
+    <li>Brent is down 35% from its highs, below its moving average and pre-conflict levels.</li>
+    <li>Manufacturing PMIs are rising strongly despite the conflict: underlying demand is solid.</li>
+  </ul>
+
+  <div class="op-box">
+    <span class="op-label">Estimated timing</span>
+    <p>The Quad2 → Quad1 transition could materialise in the July–September 2026 data. The most important date in the analysis is <strong>July 14, 2026</strong>, publication date of the June 2026 CPI. It will be the first reading to capture Brent's fall from $120 to $78.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>7. Risks and Factors to Watch</h2>
+
+  <h3>7.1 What Could Invalidate the Thesis</h3>
+
+  <div class="section-label">Table 7 · Risk Map for the Quad2 → Quad1 Transition</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Risk</th><th>Probability</th><th>Impact</th><th>Alert variable</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Iran conflict re-escalation</td>
+          <td><span class="badge badge-warn">Low-Medium</span></td>
+          <td><span class="badge badge-bear">Very high</span></td>
+          <td>Brent &gt;$95</td>
+        </tr>
+        <tr>
+          <td>Core CPI accelerates &gt;3.2%</td>
+          <td><span class="badge badge-warn">Medium</span></td>
+          <td><span class="badge badge-bear">High</span></td>
+          <td>Jul 2026 CPI</td>
+        </tr>
+        <tr>
+          <td>Second-round effects in services</td>
+          <td><span class="badge badge-warn">Medium</span></td>
+          <td><span class="badge badge-warn">Medium</span></td>
+          <td>Shelter + Transport CPI</td>
+        </tr>
+        <tr>
+          <td>Long-term unemployment deterioration</td>
+          <td><span class="badge badge-bull">Low</span></td>
+          <td><span class="badge badge-warn">Medium</span></td>
+          <td>Initial Claims &gt;260K</td>
+        </tr>
+        <tr>
+          <td>Global demand recession</td>
+          <td><span class="badge badge-bull">Low</span></td>
+          <td><span class="badge badge-bear">High</span></td>
+          <td>Global PMIs + Brent &lt;$65</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>7.2 The Most Underestimated Risk</h3>
+
+  <p>The most underestimated risk is not geopolitics but <strong>second-round inflation in services</strong>. Shelter (+3.4%), transportation services (+4.1%), and apparel (+4.8%) components of the May core CPI already show upward pressures that are not directly energy-driven. If these components do not ease with the Brent decline, core could approach 3.2%–3.5%, significantly complicating the Goldilocks scenario.</p>
+
+  <h3>7.3 Cognitive Bias to Watch</h3>
+
+  <div class="op-box">
+    <span class="op-label">Methodological warning</span>
+    <p>The narrative is coherent and the data aligns well. Precisely when analysis becomes elegant, scepticism must be activated. The market already knows all of this information and prices it in ahead of time. Before acting on this thesis, verify how much of the Quad2→Quad1 transition is already reflected in asset prices (S&P500, interest rates).</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>8. Alternative Scenario: Prolonged Quad2</h2>
+
+  <p>The central thesis points to a Quad2-to-Quad1 transition within 2–3 months. However, there is an alternative, empirically grounded scenario: inflation remaining elevated in a 4%–5% range for a prolonged period with the economy continuing to expand, consolidating the Quad2 regime for significantly longer than anticipated. The starting point for this scenario is what happened on June 17, 2026 at the FOMC.</p>
+
+  <h3>8.1 The June 17 FOMC: Facts and Signals</h3>
+
+  <ul>
+    <li>Rates held at <strong>3.5%–3.75%</strong> unanimously (12-0), the fourth consecutive hold since early 2026. Headline CPI at the time: 4.2%, highest since April 2023.</li>
+    <li>The dot plot revised 2026 projected inflation upward to <strong>3.6% headline and 3.3% core</strong> — versus 2.7% projected in March, nearly a full percentage point jump in three months — and nine of eighteen voting members indicated at least one rate hike before year-end would be necessary.</li>
+    <li>Warsh eliminated <em>forward guidance</em> from communications and refused to publish his own dot plot. The statement shrank from several paragraphs to just <strong>114 words in three paragraphs</strong>.</li>
+    <li>Markets reacted eloquently: 2-year Treasury yields <strong>+16bp</strong> to 4.21%. S&P500 −1.21%. Gold −2%. Dollar +1%, its best session in nearly a year.</li>
+  </ul>
+
+  <p>The combination of hawkish rhetoric ("The Fed will deliver price stability. The commitment is strong, unanimous, and unequivocal," Warsh declared) with zero action — rates unchanged despite 4.2% inflation — is precisely the signature of a central bank that is <strong>tolerating higher inflation than it publicly acknowledges</strong>. This is the Gordian knot of the alternative scenario.</p>
+
+  <h3>8.2 The Fed–ECB Divergence: Same Cause, Opposite Decisions</h3>
+
+  <div class="section-label">Table 10 · Fed vs. ECB Comparison Facing the Same Inflationary Shock</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Indicator</th><th>Fed (US) — Jun 17, 2026</th><th>ECB (Eurozone) — Jun 11, 2026</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Headline inflation</td><td>4.2% (May 2026)</td><td>3.2% (May 2026)</td></tr>
+        <tr><td>Rate decision</td><td>On hold (3.5%–3.75%)</td><td>Hike +25bp (to 2.25%)</td></tr>
+        <tr><td>GDP</td><td>+1.6% (Q1 2026, SAAR)</td><td>−0.2% (Q1 2026)</td></tr>
+        <tr><td>Stated cause</td><td>"Transitory supply shock"</td><td>"We cannot ignore this shock"</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>The only explanation consistent with the data — without resorting to conspiracy theories — is that the Fed has <strong>implicitly raised its inflation tolerance threshold</strong>, at least while the economy remains in expansion and the labour market holds.</p>
+
+  <h3>8.3 The Debt Liquidation Hypothesis</h3>
+
+  <p>The US carries approximately <strong>$39 trillion</strong> in public debt. With sustained inflation at 4–5% per year, the real value of that debt erodes by approximately that percentage each year. Over ten years, at 4.5% average inflation, the real value of the debt falls roughly <strong>36% without paying it down or cutting spending</strong>. This is the economic equivalent of a silent haircut imposed on all dollar-denominated creditors of the state. The technical name: <em>financial repression</em>.</p>
+
+  <p>The most relevant precedent is the <strong>1945–1955 decade</strong> in the US: after World War II, US public debt was 119% of GDP. Rather than raising taxes or imposing austerity, the Treasury and Fed coordinated artificially low interest rates with moderately elevated inflation. In ten years, the debt-to-GDP ratio was halved.</p>
+
+  <div class="op-box">
+    <span class="op-label">Intellectual honesty note</span>
+    <p>The liquidation hypothesis does not require assuming conspiracy between the Treasury and Fed. It requires only assuming that the <strong>implicit inflation tolerance threshold has risen</strong> in a context of very high debt, solid economy, and external energy shock. That is an empirically testable hypothesis, observable through real rate behaviour over time.</p>
+  </div>
+
+  <h3>8.4 Brent as a Policy Lever</h3>
+
+  <p>If the US has the initiative in the conflict — and available data suggests it does, given that the February 28 strikes were initiated by the US and Israel while Iran was in negotiations — then the US indirectly controls the <strong>global energy thermostat</strong> through the pace of conflict de-escalation. The causal chain is direct: pace of peace negotiations → Hormuz state → available crude supply → Brent price → energy inflation → headline CPI with a 6–8 week lag.</p>
+
+  <h3>8.5 Prolonged Quad2: Conditions and Favoured Assets</h3>
+
+  <ul>
+    <li>Core CPI does not materially ease and stabilises at 3.0%–3.5%, confirming persistent second-round effects.</li>
+    <li>Brent stabilises at $75–$95, maintaining an energy premium without triggering a cost-shock recession.</li>
+    <li>The Fed holds at 3.5%–3.75% or delivers at most one symbolic 25bp hike, keeping real rates negative.</li>
+    <li>Labour market and activity (PMIs, GDP) remain positive.</li>
+  </ul>
+
+  <p>In prolonged Quad2, <strong>favoured assets</strong> include commodities, real estate, stocks with strong pricing power and high Capex (the same tech majors analysed above), inflation-linked bonds (TIPS), and above all gold. <strong>Disfavoured assets</strong> include long-duration fixed-rate bonds and companies with thin margins unable to pass costs to consumers.</p>
+
+  <h3>8.6 Gold as the Scenario's Thermometer</h3>
+
+  <figure class="article-img">
+    <img src="../img/macro-eeuu-gold.jpg" alt="Gold spot (USD/OZ) — Weekly chart (Nov 2023 – Jun 2026)">
+    <figcaption>Figure 6. Gold spot (USD/OZ) — Weekly chart (Nov 2023 – Jun 2026). Yellow line is the moving average. Source: TVC / ActivTrades.</figcaption>
+  </figure>
+
+  <p>The chart shows a parabolic rise from ~$2,000 in 2024 to highs of ~$5,350 in March–April 2026 — a revaluation of more than <strong>160% in two years</strong> — followed by a −20% correction to the current $4,269. In macro terms: the parabolic rise perfectly priced in the Quad2 scenario and the geopolitical shock. The subsequent correction reflects the market beginning to price in the Quad1 transition.</p>
+
+  <div class="op-box">
+    <span class="op-label">Gold as arbiter: two signals, two scenarios</span>
+    <p><strong>Gold continues falling toward $3,800–$4,000</strong> → Market pricing Quad1 (Goldilocks). Inflation easing, real rates improving. Main thesis validated.</p>
+    <p><strong>Gold stabilises and breaks above $5,350</strong> → Market pricing prolonged Quad2. Persistent inflation, sustained negative real rates, silent debt liquidation underway. Alternative scenario validated.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>9. Conclusions and Next Steps</h2>
+
+  <p>Both scenarios start from the same point: Quad2 (Inflationary Boom). What differentiates them is the answer to a single question: <strong>Is inflation a transitory shock that will ease in 2–3 months, or has the Fed's implicit tolerance threshold risen structurally?</strong></p>
+
+  <div class="scenario-box bull">
+    <span class="scenario-label">Scenario A — Main thesis: transition to Quad1 (Goldilocks) in 2–3 months</span>
+    <p>Brent has corrected 35% from highs to $78, below its moving average and pre-conflict levels. The energy component of CPI — which explained more than 60% of monthly increases in March–May — will reverse sharply in the June–August 2026 data.</p>
+    <p>Core CPI at 2.9% has not shown structural acceleration during the conflict period: only +0.4pp from the January trough. If it stabilises or eases, headline will fall toward core and inflation will converge to the 2.5%–3.0% range.</p>
+    <p>Quad1 is historically the most favourable regime for equities: margins improve as energy costs fall, the Fed regains room to cut rates, real consumption recovers with disinflation, and equity multiples expand as the discount rate falls.</p>
+    <ul>
+      <li><strong>Confirmation signal:</strong> gold will continue its correction toward $3,800–$4,000.</li>
+      <li><strong>Key date:</strong> June 2026 CPI on July 14, 2026.</li>
+    </ul>
+  </div>
+
+  <div class="scenario-box alt">
+    <span class="scenario-label">Scenario B — Alternative: prolonged Quad2 (controlled inflation 4%–5%)</span>
+    <p>The Fed has implicitly raised its inflation tolerance threshold. With negative real rates (3.625% nominal vs 4.2% inflation), it is de facto applying financial repression, eroding in real terms the $39 trillion public debt.</p>
+    <p>The Fed–ECB divergence is the most empirically challenging data point under orthodox doctrine: the ECB hikes with inflation at 3.2% and the economy contracting; the Fed stands pat with inflation at 4.2% and the economy expanding.</p>
+    <ul>
+      <li><strong>Confirmation signal:</strong> gold rebounds and breaks above $5,350.</li>
+    </ul>
+  </div>
+
+  <h3>Upcoming Data to Watch</h3>
+
+  <div class="section-label">Table 8 · Key Publication Calendar</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Date</th><th>Data</th><th>Why it matters</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Jul 14, 2026</strong></td><td>June 2026 CPI (BLS)</td><td>First reading with Brent &lt;$80. Thesis confirmed or denied.</td></tr>
+        <tr><td>Jun 25, 2026</td><td>Q1 GDP 3rd estimate + Corp. Profits (BEA)</td><td>Profit and GDP revision. Complete Q1 data.</td></tr>
+        <tr><td>Jul 1, 2026</td><td>ISM Manufacturing PMI June</td><td>Continuity of manufacturing expansion.</td></tr>
+        <tr><td>Weekly</td><td>Initial Claims (DOL/FRED)</td><td>Monitor long-term unemployment deterioration.</td></tr>
+        <tr><td>Daily</td><td>Brent price (CPI proxy)</td><td>Most important leading variable of the analysis.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2>Appendix: Data Sources</h2>
+
+  <div class="section-label">Table 9 · Reference Series</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Variable</th><th>FRED Series / Source</th><th>Frequency</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Headline CPI</td><td>CPIAUCSL — BLS</td><td>Monthly</td></tr>
+        <tr><td>Core CPI</td><td>CPILFESL — BLS</td><td>Monthly</td></tr>
+        <tr><td>Real GDP</td><td>GDPC1 — BEA</td><td>Quarterly</td></tr>
+        <tr><td>Corporate profits</td><td>CPROFIT / CP — BEA NIPA</td><td>Quarterly</td></tr>
+        <tr><td>ISM Manufacturing PMI</td><td>ISM Report On Business</td><td>Monthly</td></tr>
+        <tr><td>ISM Services PMI</td><td>ISM Report On Business</td><td>Monthly</td></tr>
+        <tr><td>Initial Claims</td><td>ICSA — DOL</td><td>Weekly</td></tr>
+        <tr><td>Brent Crude</td><td>DCOILBRENTEU — EIA</td><td>Daily</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="font-size:0.82rem; color:var(--muted); font-style:italic; margin-top: 1rem;">Methodological note: October and November 2025 CPI data are not officially available due to the federal government shutdown during that period. Cleveland Fed nowcasting model estimates have been used to fill that gap, consistent with the available preceding and subsequent data.</p>
+
+  <div class="disclaimer">
+    <strong>Legal disclaimer:</strong> This article is a macroeconomic analysis exercise for informational and educational purposes. It does not constitute financial advice or investment recommendation. Financial markets are inherently uncertain. Any investment decision is solely the reader's responsibility.
+  </div>
+
+</div><!-- /container -->
+
+<div class="container" style="padding: 3rem 2rem; border-top: 1px solid var(--rule);">
+  <p style="font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.5rem;">Comments · Comentarios · Kommentare · Megjegyzések</p>
+  <script src="https://giscus.app/client.js"
+          data-repo="Pav-DerHexer/Criptomaneras"
+          data-repo-id="R_kgDORl5KmA"
+          data-category="Comments"
+          data-category-id="DIC_kwDORl5KmM4C7qex"
+          data-mapping="specific"
+          data-term="article-2026-06-18-analisis-macro-eeuu"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="light"
+          data-lang="en"
+          crossorigin="anonymous"
+          async>
+  </script>
+</div>
+
+<footer>
+  © 2026 Criptomaneras &nbsp;·&nbsp; P.V. &nbsp;·&nbsp;
+  <a href="https://t.me/+tjbF3GaGnGwzNzE8" style="color:var(--muted)">Telegram</a>
+</footer>
+
+</body>
+</html>
